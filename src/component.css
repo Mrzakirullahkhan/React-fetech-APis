@@ -1,0 +1,130 @@
+.container{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   border-radius: 10px 25px 10px 25px;
+   background-color: white;
+   width: 40%;
+   
+
+
+
+   margin: 40px auto;
+   
+}
+/* .ullist{
+    max-height: 50vh;
+    background-color: rgb(252, 249, 249);
+    overflow: auto;
+} */
+.header {
+    text-align: center; /* Center the heading text */
+    position: relative;
+  }
+.header::after {
+    content: "";
+    display: block;
+    width: 100px; /* Adjust the width as needed */
+    height: 6px; /* Adjust the height as needed */
+    background-color: #8B4513; /* Dark brown color */
+    margin: 0 auto; /* Center the line horizontally */
+    margin-top: 10px; /* Adjust the margin as needed */
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out; 
+  }
+  .header:hover::after {
+    width: 150px; /* Adjust the width on hover */
+  }
+/* list design  */
+.mylist{
+    font-size: 17px;
+    font-weight: bold;
+}
+.btn {
+    position: relative;
+    background-color: rgb(230, 34, 77);
+    border-radius: 5px;
+    box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+    padding: 15px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 154px;
+    height: 49px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+.btn::before {
+    content: "";
+    background-color: rgb(248, 50, 93);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 700ms ease-in-out;
+    display: inline-block;
+  }
+  
+  .btn:hover::before {
+    width: 100%;
+  }
+
+
+  /* scrollbar */
+  /* Ul styling (optional) */
+.ullist {
+    /* list-style-type: none; */
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Li styling */
+  .ullist {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    /* max-height: 100px;  */
+    overflow-y: auto; 
+    height: 50vh;
+  }
+  
+  /* Scrollbar styling with animation (customize as needed) */
+  .ullist::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  .ullist::-webkit-scrollbar-thumb {
+    background-color: #8B4513; /* Scrollbar thumb color */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Add color transition animation */
+  }
+  
+  .ullist::-webkit-scrollbar-thumb:hover {
+    background-color: #FF5733; /* Hover color */
+    animation: pulse 0.5s infinite; /* Add pulse animation on hover */
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .ullist::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Scrollbar track color */
+  }
+  
+
